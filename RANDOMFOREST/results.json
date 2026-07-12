@@ -1,0 +1,11 @@
+{
+  "model": "RandomForest",
+  "n_estimators": 100,
+  "accuracy": 0.9675,
+  "precision_macro": 0.9678,
+  "recall_macro": 0.9672,
+  "f1_macro": 0.9673,
+  "train_time_sec": 0.24,
+  "predict_time_sec": 0.03,
+  "random_state": 42
+}
