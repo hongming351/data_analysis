@@ -26,3 +26,4 @@ venv/
 *.h5
 *.ckpt
 *.model
+random_forest_model.pkl
