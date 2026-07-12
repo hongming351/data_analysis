@@ -1,19 +1,24 @@
-"""生成模型对比图（含 V6）"""
+"""生成模型对比图"""
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-models = ['Basic MLP\n(基线)', 'Dropout', 'BatchNorm\n(最佳)', 'AE V1\n(小容量)', 'AE V2-V5\n(中容量)', 'AE V6\n(大容量)']
-accuracies = [95.73, 92.70, 97.32, 67.75, 95.65, 97.15]
-times = [41.0, 50.1, 54.0, 85.0, 90.0, 120.0]
-params_k = [12.1, 12.1, 12.5, 2.8, 11.5, 35.2]
+# 设置中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False
+
+models = ['Basic MLP\n(基线)', 'Dropout', 'BatchNorm\n(最佳)', 'AE']
+accuracies = [95.73, 92.70, 97.32, 97.15]
+times = [41.0, 50.1, 54.0, 120.0]
+params_k = [12.1, 12.1, 12.5, 35.2]
 
 output_dir = os.path.join(os.path.dirname(__file__), 'results')
 
-fig, axes = plt.subplots(1, 3, figsize=(16, 5))
-colors = ['#3498db', '#e74c3c', '#2ecc71', '#9b59b6', '#f39c12', '#1abc9c']
+fig, axes = plt.subplots(1, 3, figsize=(14, 5))
+
+colors = ['#3498db', '#e74c3c', '#2ecc71', '#1abc9c']
 
 # 准确率
 bars1 = axes[0].bar(models, accuracies, color=colors, alpha=0.85, edgecolor='black', linewidth=1.2)
@@ -24,7 +29,7 @@ for bar, acc in zip(bars1, accuracies):
     axes[0].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.5,
                 f'{acc:.2f}%', ha='center', va='bottom', fontweight='bold', fontsize=9)
 axes[0].axhline(y=95.73, color='#3498db', linestyle='--', alpha=0.4, label='Baseline (95.73%)')
-axes[0].legend(fontsize=8)
+axes[0].legend(loc='upper left', fontsize=8)
 axes[0].grid(True, alpha=0.3, axis='y')
 
 # 训练时间
