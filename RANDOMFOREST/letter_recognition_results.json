@@ -1,0 +1,11 @@
+{
+  "model": "ExtraTrees (best)",
+  "n_estimators": 200,
+  "accuracy": 0.976,
+  "precision_macro": 0.9761,
+  "recall_macro": 0.9758,
+  "f1_macro": 0.9759,
+  "train_time_sec": 0.41,
+  "pred_time_sec": 0.06,
+  "random_state": 42
+}
