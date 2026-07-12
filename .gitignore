@@ -22,3 +22,7 @@ build/
 .env
 venv/
 .venv/
+*.pkl
+*.h5
+*.ckpt
+*.model
