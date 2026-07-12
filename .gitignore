@@ -18,6 +18,12 @@ build/
 # Raw data files (already converted to CSV)
 *.data
 
+# 模型文件 (体积大，超出 GitHub 100MB 限制)
+*.pkl
+*.h5
+*.ckpt
+*.model
+
 # Environment
 .env
 venv/
