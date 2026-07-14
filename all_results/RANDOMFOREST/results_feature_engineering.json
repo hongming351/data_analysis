@@ -1,0 +1,211 @@
+{
+  "original_features": [
+    "x_box",
+    "y_box",
+    "width",
+    "high",
+    "onpix",
+    "x_bar",
+    "y_bar",
+    "x2bar",
+    "y2bar",
+    "xybar",
+    "x2ybr",
+    "xy2br",
+    "x_ege",
+    "xegvy",
+    "y_ege",
+    "yegvx"
+  ],
+  "engineered_features": [
+    "aspect_ratio",
+    "pixel_density",
+    "x_offset",
+    "y_offset",
+    "pix_per_width",
+    "pix_per_high",
+    "x_center_dev",
+    "y_center_dev",
+    "edge_density_x",
+    "edge_density_y",
+    "edge_ratio",
+    "moment_ratio",
+    "area",
+    "perimeter",
+    "skew_x",
+    "skew_y"
+  ],
+  "selected_engineered": [
+    "edge_ratio",
+    "moment_ratio",
+    "skew_x",
+    "skew_y",
+    "edge_density_x",
+    "edge_density_y",
+    "pix_per_high",
+    "pix_per_width",
+    "aspect_ratio",
+    "y_center_dev",
+    "x_center_dev",
+    "pixel_density",
+    "x_offset",
+    "y_offset"
+  ],
+  "feature_importance": [
+    {
+      "name": "x_box",
+      "importance": 0.0083
+    },
+    {
+      "name": "y_box",
+      "importance": 0.0093
+    },
+    {
+      "name": "width",
+      "importance": 0.0089
+    },
+    {
+      "name": "high",
+      "importance": 0.0066
+    },
+    {
+      "name": "onpix",
+      "importance": 0.0102
+    },
+    {
+      "name": "x_bar",
+      "importance": 0.03
+    },
+    {
+      "name": "y_bar",
+      "importance": 0.0485
+    },
+    {
+      "name": "x2bar",
+      "importance": 0.0378
+    },
+    {
+      "name": "y2bar",
+      "importance": 0.0458
+    },
+    {
+      "name": "xybar",
+      "importance": 0.0427
+    },
+    {
+      "name": "x2ybr",
+      "importance": 0.0541
+    },
+    {
+      "name": "xy2br",
+      "importance": 0.0551
+    },
+    {
+      "name": "x_ege",
+      "importance": 0.0531
+    },
+    {
+      "name": "xegvy",
+      "importance": 0.0527
+    },
+    {
+      "name": "y_ege",
+      "importance": 0.0496
+    },
+    {
+      "name": "yegvx",
+      "importance": 0.0322
+    },
+    {
+      "name": "aspect_ratio",
+      "importance": 0.0174
+    },
+    {
+      "name": "pixel_density",
+      "importance": 0.0161
+    },
+    {
+      "name": "x_offset",
+      "importance": 0.0151
+    },
+    {
+      "name": "y_offset",
+      "importance": 0.0121
+    },
+    {
+      "name": "pix_per_width",
+      "importance": 0.0199
+    },
+    {
+      "name": "pix_per_high",
+      "importance": 0.0269
+    },
+    {
+      "name": "x_center_dev",
+      "importance": 0.0163
+    },
+    {
+      "name": "y_center_dev",
+      "importance": 0.0171
+    },
+    {
+      "name": "edge_density_x",
+      "importance": 0.0378
+    },
+    {
+      "name": "edge_density_y",
+      "importance": 0.0306
+    },
+    {
+      "name": "edge_ratio",
+      "importance": 0.0733
+    },
+    {
+      "name": "moment_ratio",
+      "importance": 0.0529
+    },
+    {
+      "name": "area",
+      "importance": 0.0088
+    },
+    {
+      "name": "perimeter",
+      "importance": 0.0074
+    },
+    {
+      "name": "skew_x",
+      "importance": 0.0526
+    },
+    {
+      "name": "skew_y",
+      "importance": 0.0506
+    }
+  ],
+  "results": {
+    "原始RF": {
+      "acc": 0.9725,
+      "f1": 0.9724,
+      "time": 0.94
+    },
+    "组合特征RF": {
+      "acc": 0.9685,
+      "f1": 0.9685,
+      "time": 0.96
+    },
+    "组合特征ET": {
+      "acc": 0.9748,
+      "f1": 0.9747,
+      "time": 0.31
+    },
+    "原始ET": {
+      "acc": 0.9752,
+      "f1": 0.9751,
+      "time": 0.32
+    },
+    "精选特征RF": {
+      "acc": 0.9683,
+      "f1": 0.9682,
+      "time": 1.01
+    }
+  }
+}

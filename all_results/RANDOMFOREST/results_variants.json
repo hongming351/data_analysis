@@ -1,0 +1,30 @@
+{
+  "ExtraTrees (\u6781\u7aef\u968f\u673a\u6811)": {
+    "accuracy": 0.9752,
+    "precision_macro": 0.9752,
+    "recall_macro": 0.9751,
+    "f1_macro": 0.9751,
+    "train_time_sec": 0.29
+  },
+  "Balanced RF (\u7c7b\u522b\u5e73\u8861)": {
+    "accuracy": 0.9685,
+    "precision_macro": 0.9687,
+    "recall_macro": 0.9682,
+    "f1_macro": 0.9683,
+    "train_time_sec": 0.24
+  },
+  "Top8 Features (\u7279\u5f81\u7b5b\u9009)": {
+    "accuracy": 0.9393,
+    "precision_macro": 0.9398,
+    "recall_macro": 0.9391,
+    "f1_macro": 0.9393,
+    "train_time_sec": 0.19
+  },
+  "Deep RF (\u6df1\u6811 x200)": {
+    "accuracy": 0.9685,
+    "precision_macro": 0.9688,
+    "recall_macro": 0.9682,
+    "f1_macro": 0.9683,
+    "train_time_sec": 0.41
+  }
+}

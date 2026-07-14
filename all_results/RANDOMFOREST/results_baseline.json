@@ -1,0 +1,31 @@
+{
+  "model": "Baseline (default)",
+  "accuracy": 0.9675,
+  "precision_macro": 0.9678,
+  "recall_macro": 0.9672,
+  "f1_macro": 0.9673,
+  "oob_score": 0.9571,
+  "train_time_sec": 0.43,
+  "pred_time_sec": 0.04,
+  "params": {
+    "bootstrap": "True",
+    "ccp_alpha": "0.0",
+    "class_weight": "None",
+    "criterion": "gini",
+    "max_depth": "None",
+    "max_features": "sqrt",
+    "max_leaf_nodes": "None",
+    "max_samples": "None",
+    "min_impurity_decrease": "0.0",
+    "min_samples_leaf": "1",
+    "min_samples_split": "2",
+    "min_weight_fraction_leaf": "0.0",
+    "monotonic_cst": "None",
+    "n_estimators": "100",
+    "n_jobs": "-1",
+    "oob_score": "True",
+    "random_state": "42",
+    "verbose": "0",
+    "warm_start": "False"
+  }
+}

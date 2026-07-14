@@ -1,0 +1,14 @@
+{
+  "model": "KNN",
+  "best_params": {
+    "n_neighbors": 5,
+    "p": 1,
+    "weights": "distance"
+  },
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.956,
+  "precision_weighted": 0.9563,
+  "recall_weighted": 0.956,
+  "f1_score_weighted": 0.956,
+  "train_time_seconds": 9.94
+}
